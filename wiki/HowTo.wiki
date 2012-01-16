@@ -3,7 +3,9 @@
 = Installation =
 
 * Download newest file: https://code.google.com/p/rutorrent-stream-plugin/downloads/list
+
 * Extract in your rutorrent plugins folder (perhaps /var/www/rutorrent/plugins)
+
 * It should work, but you need to change some settings in VLC for better performance
 
 = VLC Settings =
@@ -12,6 +14,7 @@ Open the settings menu (Tools->Preferences), click all/advanced
 Then under Input/Codecs, under access modules, click HTTP(S).
 
 * Change caching value to 19200 (you can use higher if it still buffers)
+
 * Check the box 'auto re-connect'.
 
 
