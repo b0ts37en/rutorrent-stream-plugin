@@ -6,7 +6,7 @@
 
 * Extract in your rutorrent plugins folder (perhaps /var/www/rutorrent/plugins)
 
-* It should work, but you need to change some settings in VLC for better performance
+* It should work with default settings, but you need to change some settings in VLC for better performance
 
 = VLC Settings =
 
