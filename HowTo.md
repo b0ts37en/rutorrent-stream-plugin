@@ -1,0 +1,32 @@
+# Installation #
+
+**Download newest file: https://code.google.com/p/rutorrent-stream-plugin/downloads/list**
+
+**Extract in your rutorrent plugins folder (perhaps /var/www/rutorrent/plugins)**
+
+**It should work with default settings, but you need to change some settings in VLC for better performance**
+
+# VLC Settings #
+
+Open the settings menu (Tools->Preferences), click all/advanced
+Then under Input/Codecs, under access modules, click HTTP(S).
+
+**Change caching value to 19200 (you can use higher if it still buffers)**
+
+**Check the box 'auto re-connect'.**
+
+
+# Server Settings #
+
+Only file to edit is config.php
+
+You can add your username/password if you use http (basic) auth, so that it automatically logs in so you do not have to enter it in VLC each time.
+
+If your webserver is nginx, you can add a location to your server block:
+<pre>location ^~ /stream/ {<br>
+internal;<br>
+alias /;<br>
+}</pre>
+and change USE\_NGINX in config.php to true
+
+so that you can pause / skip forward/back in the streams.
